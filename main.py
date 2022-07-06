@@ -7,42 +7,45 @@ import time
 root = Tk()
 
 def RunCode():
-  list1 = [1, 2, 3, 4]
-  for x in range (1,4):
-    TheRandomChoice = random.choice(list1)
-    if TheRandomChoice == 1:
-      def RunCode1():
-        bg = "blue"
-        time.sleep(2)
-        bg = "black"
+    list1 = [1, 2, 3, 4]
+    for x in range (1,4):
+        TheRandomChoice = random.choice(list1)
+        if TheRandomChoice == 1:
+            def RunCode1():
+                bg = "black"
+                time.sleep(2)
+                bg = "blue"
+                time.sleep(2)
+                bg = "black"
+        if TheRandomChoice == 2:
+            def RunCode2():
+                bg = "black"
+                time.sleep(2)
+                bg = "green"
+                time.sleep(2)
+                bg = "black" 
+        if TheRandomChoice == 3:
+            def RunCode3():
+                bg = "black"
+                time.sleep(2)
+                bg = "red"
+                time.sleep(2)
+                bg = "black"
+        if TheRandomChoice == 4:
+            def RunCode4():
+                bg = "black"
+                time.sleep(2)
+                bg = "yelow"
+                time.sleep(2)
+                bg = "black"                       
 
-    if TheRandomChoice == 2:
-      def RunCode2():
-        bg = "blue"
-        time.sleep(2)
-        bg = "black"    
-
-      if TheRandomChoice == 3:
-          def RunCode3():
-            bg = "blue"
-            time.sleep(2)
-            bg = "black"  
-
-      if TheRandomChoice == 4:
-          def RunCode4():
-            bg = "blue"
-            time.sleep(2)
-            bg = "black"         
-  
-              
-
-  btn = Button(root, text="1",
-                 fg="black", command=RunCode1)
-  btn = Button(root, text="2",
+    btn = Button(root, text="1",
+                  command=RunCode1)
+    btn = Button(root, text="2",
                  fg="black", command=RunCode2)
-  btn = Button(root, text="3",
+    btn = Button(root, text="3",
                  fg="black", command=RunCode3)
-  btn = Button(root, text="4",
+    btn = Button(root, text="4",
                  fg="black", command=RunCode4)
 # root window title and dimension
 root.title("Box Clicker")
