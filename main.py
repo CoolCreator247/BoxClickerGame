@@ -21,21 +21,21 @@ def RunCode():
             def RunCode2():
                 bg = "black"
                 time.sleep(2)
-                bg = "blue"
+                bg = "green"
                 time.sleep(2)
                 bg = "black" 
         if TheRandomChoice == 3:
             def RunCode3():
                 bg = "black"
                 time.sleep(2)
-                bg = "blue"
+                bg = "red"
                 time.sleep(2)
                 bg = "black"
         if TheRandomChoice == 4:
             def RunCode4():
                 bg = "black"
                 time.sleep(2)
-                bg = "blue"
+                bg = "yelow"
                 time.sleep(2)
                 bg = "black"                       
 
