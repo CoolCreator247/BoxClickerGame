@@ -1,6 +1,7 @@
 # Import Modules
 from tkinter import *
 import random
+import time
 
 # create root window
 root = Tk()
@@ -11,7 +12,32 @@ def RunCode():
         TheRandomChoice = random.choice(list1)
         if TheRandomChoice == 1:
             def RunCode1():
-                fg = "black"
+                bg = "black"
+                time.sleep(2)
+                bg = "blue"
+                time.sleep(2)
+                bg = "black"
+        if TheRandomChoice == 2:
+            def RunCode2():
+                bg = "black"
+                time.sleep(2)
+                bg = "blue"
+                time.sleep(2)
+                bg = "black" 
+        if TheRandomChoice == 3:
+            def RunCode3():
+                bg = "black"
+                time.sleep(2)
+                bg = "blue"
+                time.sleep(2)
+                bg = "black"
+        if TheRandomChoice == 4:
+            def RunCode4():
+                bg = "black"
+                time.sleep(2)
+                bg = "blue"
+                time.sleep(2)
+                bg = "black"                       
 
     btn = Button(root, text="1",
                   command=RunCode1)
